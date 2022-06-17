@@ -1,0 +1,4 @@
+// Replace the value with your NFT contract address
+const CRYPTODEVS_NFT_CONTRACT_ADDRESS = "0x18C7688dDDC9388A49138969A59E2048584aA388";
+
+module.exports = { CRYPTODEVS_NFT_CONTRACT_ADDRESS };
