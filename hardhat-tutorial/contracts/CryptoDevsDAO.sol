@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /**
  * Interface for the FakeNFTMarketplace
  */
- interface IFakeNFTMarketplace {
+interface IFakeNFTMarketplace {
   /// @dev getPrice() returns the price of an NFT from the FakeNFTMarketplace
   /// @return Returns the price in Wei for an NFT
   function getPrice() external view returns (uint256);
@@ -87,8 +87,8 @@ contract CryptoDevsDAO is Ownable {
   // called if the given proposal's deadline has not been exceeded yet
   modifier activeProposalOnly(uint256 proposalIndex) {
     require(
-        proposals[proposalIndex].deadline > block.timestamp,
-        "DEADLINE_EXCEEDED"
+      proposals[proposalIndex].deadline > block.timestamp,
+      "DEADLINE_EXCEEDED"
     );
     _;
   }
